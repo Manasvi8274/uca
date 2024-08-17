@@ -1,0 +1,10 @@
+O_RDONLY	It will Open the file in read-only mode.
+O_WRONLY	It will Open the file in write-only mode.
+O_RDWR	    It will Open the file in read and write mode.
+O_CREAT	    It can Create a file if it doesn’t exist.
+O_EXCL	    It can Prevent creation if it already exists.
+O_ APPEND	It will Open the file and places the cursor at the end of the contents.
+O_ASYNC	    It will Enable input and output control by signal.
+O_CLOEXEC   It will Enable close-on-exec mode on the open file.
+O_NONBLOCK  It will Disable the blocking of the file opened.
+O_TMPFILE   Create an unnamed temporary file at the specified path.

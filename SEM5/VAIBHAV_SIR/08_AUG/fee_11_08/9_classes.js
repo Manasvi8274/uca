@@ -33,3 +33,17 @@ class Student {
 }
 
 var student1 = new Student("fname5", 100);
+
+function add(x, y) {
+    return x + y
+}
+class add1 {
+    z=0;
+    constructor(x, y) {
+        this.z = x + y;
+    }
+}
+
+console.log(add(5,6));
+var t = new add1(6,7);
+console.log(t.a)

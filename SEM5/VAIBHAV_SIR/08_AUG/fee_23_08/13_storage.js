@@ -4,7 +4,7 @@
 //        setitem -create and update
 //        getitem
 //        removeitem    
-// 2. SESSION STORAGE = only applicabe for session storage
+// 2. SESSION STORAGE = only applicabe for session storage,live time tab ke liye
 //        setitem - create and update
 //        getitem
 //        removeitem 

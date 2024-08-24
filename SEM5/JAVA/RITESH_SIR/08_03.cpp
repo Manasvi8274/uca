@@ -8,5 +8,5 @@ int main()
     // printf("%d", n >> 31 | n);
     //
     int a = -128;
-    printf("%d", a | );
+    printf("%d", a | 1);
 }

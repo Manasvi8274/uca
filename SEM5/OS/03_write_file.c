@@ -13,7 +13,7 @@ int main()
     int sz;
     sz = write(fd, "hello world \nMy name is manasvi", strlen("hello world \n My name is manasvi"));
 
-    printf("called write(% d, \"hello world \\n My name is manasvi\", %d).It returned % d\n ", fd, strlen("hello world \n My name is manasvi"), sz);
+    printf("called write(%d, \"hello world \\n My name is manasvi\", %d).It returned %d\n ", fd, strlen("hello world \n My name is manasvi"), sz);
     // printf("%d", sz);
     close(fd);
     return 0;

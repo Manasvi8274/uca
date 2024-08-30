@@ -61,3 +61,5 @@ function infiniteconcat(is) {
     }
 }
 var concat1 = new infiniteconcat("str1");
+
+concat1.concat("str2").concat("str3");

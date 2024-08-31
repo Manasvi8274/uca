@@ -1,3 +1,4 @@
+package semfive.java.riteshsir;
 
 public class thread_08_24 {
     public static void main(String[] args){

@@ -4,7 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${default}",
-                "C:/MinGW/include"
+                "C:/MinGW/include",
+                "c:/MingW/include/bits"
             ],
             "defines": [
                 "_DEBUG",

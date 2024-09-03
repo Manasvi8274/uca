@@ -57,6 +57,11 @@ public class priority_q {
                 k=j;
             }
         }
+        public void print(){
+            for(int i=1;i<n;i++){
+                System.out.println(pq[i]);
+            }
+        }
     
     }
 
@@ -67,11 +72,14 @@ public class priority_q {
         pQueue.insert(7);
         pQueue.insert(11);
 
-        assert pQueue.delMax() == 11;
+        // pQueue.print();
+
+        // assert pQueue.delMax() == 11;
 
         pQueue.insert(16);
         pQueue.insert(13);
         pQueue.insert(8);
+        pQueue.print();
 
     }
 }

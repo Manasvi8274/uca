@@ -21,7 +21,7 @@ void quick_sort_recur(int arr[], int left, int right)
 	int pivot=arr[left];
 	int i = left +1;
 	for(int j=left+1; j <= right ; j++){
-		if(arr[i] < pivot){
+		if(arr[j] < pivot){
 			exch(arr,i,j);
 			i++;
 		}

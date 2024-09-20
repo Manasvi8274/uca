@@ -25,8 +25,8 @@ int bitand(int x, int y)
 
 int condi(int x, int y, int z)
 {
-    return ((!x) & 1) | z + (!((!x) & 0)) | y;
-    // return ((!!x << 31 >> 31) & y) + ((!x << 31 >> 31) & z);
+    // return ((!x) & 1) | z + (!((!x) & 0)) | y;
+    return ((!!x << 31 >> 31) & y) + ((!x << 31 >> 31) & z);
 }
 
 int bang(int x)

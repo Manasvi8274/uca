@@ -2,7 +2,8 @@
 import { createRoot } from "react-dom/client"
 // import { App } from "./App";
 import { App } from "./App";
-import {header as Header} from "./header";
+import { aheader as AHeader } from "./aheader";
+import { Productlist } from "./Productlist"
 
 // const reactProjectRoot = createRoot(document.getElementById("root"));
 

@@ -1,4 +1,12 @@
-import { header as Header } from "./header"
+import { aheader as AHeader } from "./aheader"
+import { Productlist } from "./Productlist"
 export function App() {
-    return <Header title="hello manu"></Header>
+    return (
+        <>
+            <header>
+                <AHeader />
+            </header>
+            <Productlist />
+        </>
+    )
 }

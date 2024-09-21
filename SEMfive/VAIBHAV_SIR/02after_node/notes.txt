@@ -1,0 +1,23 @@
+when do conponent re render:-
+    state change, parent re-render then child re-render , prop
+component:-
+    function , reusablee code
+why root element :-
+    bcs root make full html to react make a root element which is controlled by react
+why react:-
+    simplified,create a function only html can be done by react,automatically re reender the component
+why react instead of angular:-
+    if use angular only use angular no other but react can be molded to different language easily
+
+
+command to use :-
+    1)npm create vite
+    2)project name and choose react and js
+    3)change directory
+    4)npm install
+    //to run
+    5)npm run dev
+
+to change port :- go to line no. 7 in package.json in vite then add --port portnumber
+
+if we use .js or .jsx there is no impact as they bot are same for react but only .jsx has to be converted to .js

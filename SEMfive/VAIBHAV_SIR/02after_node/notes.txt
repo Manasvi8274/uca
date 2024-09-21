@@ -21,3 +21,6 @@ command to use :-
 to change port :- go to line no. 7 in package.json in vite then add --port portnumber
 
 if we use .js or .jsx there is no impact as they bot are same for react but only .jsx has to be converted to .js
+
+NOTE  --- : if we use small starting character it does not work but if we do big case starting then it works
+            but if we create a file with small the when importing in anyfile use "as big case alphabet starter"

@@ -31,3 +31,21 @@ state = current state ie state at whichc web page is currently working
 we use two place to save data :-
     1) use state(to save data) - triggers re-render
     2) useref() - no trigger re-renderuse for mutable objects
+---------------------------------------------------------------------------------------------
+27_09_2024:::::::::::::::::::::::::::::::::::::::::::::::::
+vite to optimese the server rendering:
+    1)build part of vite converts the jsx to javascript , css , html etc;
+    2)build part of vite also host the build port
+    2)doesnt re redner the entire page but the changes to previous dom 
+    (after rendering page one time vite creates a virtual dom , in case of re rendering of page it only renders the change(delta) in actual dom to virtual dom then pushes the virtual dom and renders it)
+    why virtual dom:-
+        1)(dom to dom compile)
+        2)(combines the all updates into a batch)
+
+USESTATE() to resave data;
+
+USEEFFECT();(to moniotr re rendering)
+    parameter 1 = effect to re render
+    parameter 2 = dependency which part depends
+    never create open components,var,any data
+    only uuse usestate aor useref

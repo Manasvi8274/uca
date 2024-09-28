@@ -49,3 +49,16 @@ USEEFFECT();(to moniotr re rendering)
     parameter 2 = dependency which part depends
     never create open components,var,any data
     only uuse usestate aor useref
+to download bootstrap:- npm i bootstrap@5.3.3
+--------------------------------------------------------------------------------------------------------------------------
+
+28_09_2024 :::::::::::::::::::::::::::::::::::::::::::::::::::::
+bootstraping the application is just inititlising the application
+
+hooks:- any part which is parsed as function only runs on the client side , we cannot us euseeffect,usestate inside a function , any hool cannot be used inside a function can only be used in custom hooks
+
+children  - any components
+
+primary work of react  -  manage component (anything else we can make different lib)
+
+to send data to component  - props a only way

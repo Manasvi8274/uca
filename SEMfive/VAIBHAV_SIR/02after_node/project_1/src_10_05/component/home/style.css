@@ -1,0 +1,15 @@
+table {
+    border: "2px solid black";
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid black;
+}
+
+.tablediv {
+    margin-left: 40%;
+    margin-top: 10%;
+    align-content: center;
+}

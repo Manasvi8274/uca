@@ -59,6 +59,32 @@ hooks:- any part which is parsed as function only runs on the client side , we c
 
 children  - any components
 
-primary work of react  -  manage component (anything else we can make different lib)
-
+primary work of react  -  manage component (anything else we can make different lib) , componenet re render
+/////props 
 to send data to component  - props a only way
+
+no refresh in single page app 
+use bootstrap instead of making new css unless needed as css peaople requirement is very less
+
+custom hools - hooks name start from "use" keyword and can accomodate default hooks 
+-----------------------------------------------------------------------------------------------------------------
+Synthetics event is mostly a wrapper on default html events 
+-------------------------------------------------------------------------------------------------------------
+to install json server - npm i -g json-server
+we need to make sure both server on different ports;
+
+no we make a db.json file with arrays,objects in it ,
+now we got to sign in and check from validation and if true then call fetch application
+    fetch("https://localhost:3001/posts/user") where user is the array which we want to change
+    fetch("https://localhost:3001/posts/user"{
+        method : "POST",
+        body : JSON.Stringify(formvaluesobject)
+    })
+    if(response.ok && (response.status == 200 || response.status == 200)){
+        console.log("submit success");
+    }
+    else{
+        alert();
+    }
+
+response 200 = success , 201 = created

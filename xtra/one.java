@@ -1,6 +1,7 @@
+// package xtra.one_q;
 import java.util.Scanner;
 
-class one_q{
+class one{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n;

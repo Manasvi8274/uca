@@ -1,4 +1,4 @@
-package semfive.java.riteshsir;
+package semfive.java.riteshsir.beforeoct;
 
 public class thread_08_24 {
     public static void main(String[] args){

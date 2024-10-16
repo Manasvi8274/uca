@@ -36,15 +36,26 @@ public class assignment {
             arr[i] = sc.nextInt();
         }
         int k=sc.nextInt();
-        k--;
-        int end = arr.length-1;
-        while(k>=0){
-            int temp = arr[k];
-            arr[k] = arr[end];
-            arr[end] = temp;
-            end--;
-            k--;
+        
+        for(int i=0;i<arr.length/2;i++){
+            int temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
         }
+
+        for(int i=0;i<(n-k)/2;i++){
+            int temp = arr[i];
+            arr[i] = arr[n-k-1-i];
+            arr[n-k-1 -i] = temp;
+        }
+        int c=0;
+        for(int i=n-k;i<n-k/2;i++){
+            int temp = arr[i];
+            arr[i] = arr[arr.length - 1 - c];
+            arr[arr.length -1 - c] = temp;
+            c++;
+        }
+
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i] +"\t");
         }

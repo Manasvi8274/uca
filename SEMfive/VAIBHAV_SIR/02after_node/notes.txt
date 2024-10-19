@@ -88,3 +88,11 @@ now we got to sign in and check from validation and if true then call fetch appl
     }
 
 response 200 = success , 201 = created
+
+----------------------------------------------------------------------------------------------------------------------
+server - db.json
+how to know if hook - if use keyword is used;
+diff between hook or normal method - hook for special purpose which helps in change in state where as normal method is normal (hooks are top level method like tehy cannot be called in normal method )(is we create a custom hook we can use normal inbuilt use hook)
+
+normal function can be called anywhere and cannot call hooks;
+hooks can only be called at the top level of function , hook function can internal call other calls

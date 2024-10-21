@@ -39,7 +39,24 @@ public class string {
         else    System.out.println(false);
     }
 
+    public static void print_substring(){
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        for(int i=0;i<str.length();i++){
+            // System.out.println(str.charAt(i));
+            // String s ="";
+            // s+=str.charAt(i);
+            System.out.println(str.substring(i,i+1));
+            for(int j=i+1;j<str.length();j++){
+                // s+=str.charAt(j);
+                // System.out.println(s);
+                System.out.println(str.substring(i,j+1));
+            }
+        }
+    }
+
     public static void main(String[] args) {
+        print_substring();
         // String str1;
         // String str2;
         // str1 = sc.nextLine();
@@ -55,12 +72,12 @@ public class string {
         // System.out.println(count_words());
         // reverse_string();
         // palindrome_string();
-        String str1 = "abc";
-        String str3 = "abc";
-        String str2 = new String("abc");
-        String str4 = new String("abc");
-        str1+="g";
-        System.out.println(str1);
+        // String str1 = "abc";
+        // String str3 = "abc";
+        // String str2 = new String("abc");
+        // String str4 = new String("abc");
+        // str1+="g";
+        // System.out.println(str1);
         // System.out.println(str1.equals(str2));
         // int hass1 = System.identityHashCode(str1);
         // int hass2 = System.identityHashCode(str2);

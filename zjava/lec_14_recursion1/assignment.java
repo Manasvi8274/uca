@@ -9,6 +9,7 @@ public class assignment{
 
     public static void main(String[] args) {
         String str = "racecar";
-        System.out.println("\n"+palindrome(str, 0));
+        // System.out.println("\n"+palindrome(str, 0));
+        System.out.println((char)('z' + 1));
     }
 }

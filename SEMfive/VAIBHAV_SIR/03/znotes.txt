@@ -2,3 +2,20 @@
 to install express - npm install express
 npm i -g(for global)
 ---------------------------------------------------------------------
+
+06 NOV 2024
+send and end -- 
+
+    res.send() - send() do 3 things:
+                a. set content type()res.set;
+                b. set content length.
+                c. set Etag used for caching(advanced tag)(to calculate delta)
+                d. calls end();
+    res.end() -  only to end not to send
+
+import and require
+    1.require works synchronously while import works asynchronously ir does not wait for previous import to finish
+    2.require always load one things but whereas import can import multiple things
+    3.import can do selectable import whereas require gets full module
+
+CORS POLICY(Cross Origin Resourse) to remove it we Acess control allow 

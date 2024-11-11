@@ -10,6 +10,8 @@ router.get("/", (req, res) => {
     const products = JSON.parse(fileData)?.products;
     console.log("The products data is: ", products);
     if (products && products.length > 0) {
+        // res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000/");
+        res.setHeader("Access-Control-Allow-Origin","*");//for all *
         res.send(products);
     } else {
         res.status(204);

@@ -1,0 +1,194 @@
+1>In react h2 or other element are  not html element they are react element with native classes
+2> when does a function is converted it into react component when we use it at main.jsx
+
+
+3> ---- How do we pass data in Component ---> We pass as attribute
+
+4> Props we pass something as attribute 
+
+5> Interpolation while accesing the props value we use {props.title}
+
+6> {} use this for writing javascript
+
+
+7> There are two reactHook  UseState Useref
+
+
+React 1>st rule ----> Never make open variabl like this  
+
+var productList = [];
+ setTimeout(()=>{
+  productList = [
+    {name:"Apple", price: "20"},
+    {name:"Mango", price: "30"},
+    {name:"Banana", price: "40"},
+    {name:"PineApple", price: "50"},
+  ]
+
+ },1000);
+
+                                                 kisse change karna ha
+Use Usestate   - it have two argument [product, setProduct];
+                                       kisko change karna ha
+
+
+   var [productList ,setProduct] = useState([]);
+
+                                      this will assign datatype
+
+
+
+
+------------------------------------------- Why need of virtual dom -----------------------------
+
+
+
+
+---------------------------------------------- useEffect ----------------------------------
+!>
+useEffect(effect, dependency)
+
+useEffect(() => {
+  console.log("component rendered") ;       ->> this will render continusoly;
+})
+
+
+
+2> 
+useEffect(() => {
+  console.log("component rendered") ; do this only at intial render;
+},[])
+
+
+
+
+3>
+useEffect(() => {
+  console.log("component rendered") ;
+},[productlist])      --> data will be rendered when productlist is rendered ( dependency update)
+
+
+
+
+
+
+
+
+
+--------------------------------- SPA ---------------------------------------------------
+singlepage application ---> in spa the header and footer remain same but the main section changes
+
+
+------------------------------------ React Routing --------------------------------------
+
+createBrowserRouter([{path: "/", element: <ProductList></ProductList>}])
+
+
+====================================== How to pass data from child to parent ---------------
+
+by passinf a function a props to child
+
+
+
+
+-------------------------------------------- link -------------------------------------
+
+link to ==> similar to ANCHOR TAG IT DOES NOT REFRESH whole page  it updates the history
+
+
+
+------------------------------------- useRef --------------------------------------------
+
+it is used to create static refrence of any javascript  
+it is used to preserve the value of a javascript element because of rerendring it will reassign value
+
+
+---------------------------------------- form in react -----------------------------
+
+what are sythentic event --> just wrapper on default html element
+
+
+
+
+
+
+------------------------------------------ nodemon -------------------------
+200 -> we
+204 -> empty data here browser doesnot try to download the data
+
+
+
+res send -->set content autoomaticaly it internaly call write
+res end -> we have to maually set data
+
+
+Import vs require
+
+import --> work asynco if some import is taking time it will move to another
+require --> work sycnronus
+
+
+what is preflight --> it is option request by browser we have to add another header Acces control*
+
+
+
+Crose --> it occur when reuest from one port or origin goes to another from 8000 t0 8080
+is it allowed to crud operation
+
+corse is implement on browser it does not affect api but it protect server
+
+
+
+
+
+
+
+
+
+
+======================================= Mongo Db =----------------------------------------------
+
+service is always run on window
+
+What does server start mean  ==> we mean a service or a process which currently running in os
+
+How to start mongobb in a folder -- mongod --dbpath .
+
+mongosh --> used to connect local db
+
+Default port --- 127.0.0.1:27017
+
+What is culture --> a server where our database is stored
+database contains multiple collection
+
+when we insert any empty it will always create unique id
+
+why read is faster in monodb --> because of multiple secondary attached to primary server
+write operation only happen in primary 
+
+
+Horizontal scalling
+vertical scalling -->
+
+
+
+    "moongoose": "^0.0.5"  ^ update minor version and last two value
+        "moongoose": "~0.0.5"   only patch version
+            "moongoose": "*0.0.5" latest verson
+
+
+import mongoose from "mongoose";
+await mongoose.connect  this is assuncronus so we have to try and catch
+
+--- like this
+import mongoose from "mongoose";
+
+try{
+    await mongoose.connect(
+
+    );
+    console.log("Db connection succesfull")
+} catch (error)
+{
+     console.log("failed to connect")
+}

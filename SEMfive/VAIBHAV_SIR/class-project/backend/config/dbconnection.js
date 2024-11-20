@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 try {
   await mongoose.connect(
-    "mongodb+srv://vaibhav:vaibhav@cluster0.l3cv6.mongodb.net/classprojectdb"
+    "mongodb+srv://manasvi1238274:Manasvi1238274@cluster0.p8zho.mongodb.net/classprojectdatabase"
   );
   console.log("Db Connection success")
 } catch (error) {

@@ -1,3 +1,4 @@
+package zzcontest.zextrac;
 import java.util.*;
 
 public class a{

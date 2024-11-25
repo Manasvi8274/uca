@@ -194,4 +194,17 @@ try{
 }
 
 
-------------------------------20 NOVEMBER 2024-------------------------------------------------------
+------------------------------23 NOVEMBER 2024-------------------------------------------------------
+AWS 
+create account
+EC2 use 
+instance running
+create instance
+create a key pair and save pem file to a location
+open instance by going to instance and click on id
+roll down and go to security 
+add new rule 
+with ssh and ip as 0.0.0.0/0 and save
+go back to instance and click on connect
+copy example link 
+go to the folder  where pen file is and open git bash and paste the link enjoy

@@ -97,6 +97,41 @@ public class cw {
                 newdp[i][j] = cost[i][j] + Math.min(ans1, Math.min(ans2, ans3));
             }
         }
-        System.out.println(newdp[0][0]);
+        System.out.println("newdp[0][0] = " + newdp[0][0]);
+
+        int m1 = cost.length,n1=cost[0].length;
+        int[][] newnewdp = new int[m1][n1];
+
+        for(int i=0;i<newnewdp.length;i++){
+            for(int j=0;j<newnewdp[0].length;j++){
+                newnewdp[i][j] = Integer.MAX_VALUE;
+            }
+        }
+
+        for(int i=0;i<m1;i++){
+            for(int j=0;j<n1;j++){
+                // System.out.println("i = "+i+" j = "+j);
+                if(i == 0 && j == 0){
+                    newnewdp[i][j] = cost[i][j];
+                    continue;
+                }
+                int ans1 = Integer.MAX_VALUE;
+                int ans2 = Integer.MAX_VALUE;
+                int ans3 = Integer.MAX_VALUE;
+                if(i-1>=0){
+                    ans1 = newnewdp[i-1][j];
+                }
+                
+                if(j-1>=0){
+                    ans2 = newnewdp[i][j-1];
+                }
+
+                if(j-1>=0 && i-1>=0){
+                    ans3 = newnewdp[i-1][j-1];
+                }
+                newnewdp[i][j] = cost[i][j] + Math.min(ans1, Math.min(ans2, ans3));
+            }
+        }
+        System.out.println("newnewdp[m1-1][n1-1] = "+newnewdp[m1-1][n1-1]);
     }
 }

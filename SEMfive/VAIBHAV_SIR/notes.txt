@@ -208,3 +208,28 @@ with ssh and ip as 0.0.0.0/0 and save
 go back to instance and click on connect
 copy example link 
 go to the folder  where pen file is and open git bash and paste the link enjoy
+
+
+------------------------27NOV---------------------------
+AWS SERVER run
+
+first we git clone id then we go to that folder and then we npm i and npm run dev
+
+utilities - pm2 -> sudo npm i -g pm2
+          -serve -> npm i -g serve
+
+to run :
+1) npm build
+2) pm2 serve dist 8080
+3) dist on port 8080
+4) to check pm2 status
+5) to stop we do -> pm2 status
+                    pm2 delete id(from pm2 status)
+npm i -g pm2
+npm i -g serve
+pm2 serve dist 8080 --name class-project-fe
+sudo npm i -g pm2
+sudo npm i -g serve
+
+for backend
+pm2 start index.js --name class-project-be

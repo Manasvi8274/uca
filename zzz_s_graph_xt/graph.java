@@ -1,4 +1,5 @@
 import java.util.*;
+import org.w3c.dom.ls.LSException;
 
 class unweighted_undirected_graph{
     int n;
@@ -87,7 +88,49 @@ class unweighted_undirected_graph{
         }
         return bfs1;
     }
+
+    public void DFS(int root,boolean vis[] ,ArrayList<Integer> dfs){
+        vis[root] = true;
+        dfs.add(root);
+        for(int x:adj.get(root)){
+            if(vis[x] == false){
+                DFS(x , vis , dfs);
+            }
+        }
+    }
 }
+
+
+public class graph {
+    public static void main(String[] args) {
+        String str = "Hello";
+        String str1=" World";
+        str=str+str1;
+        System.out.println(str);
+        // Scanner sc = new Scanner(System.in);
+        // int n,e;
+        // n=sc.nextInt();
+        // e=sc.nextInt();
+        // unweighted_undirected_graph gp = new unweighted_undirected_graph(n, e);
+
+        // for(int i=0;i<e;i++){
+        //     int a,b;
+        //     a=sc.nextInt();
+        //     b=sc.nextInt();
+        //     gp.addEdge(a, b);
+        // }
+
+        
+
+        // List<Integer> bfs = gp.BFS_map(0);
+        // System.out.println();
+        // for(int i = 0; i < bfs.size();i++){
+        //     System.out.print(bfs.get(i) +"\t");
+        //     // System.out.println();
+        // }
+    }
+}
+
 
 
 class unweighted_directed_graph{
@@ -153,28 +196,3 @@ class unweighted_directed_graph{
     }
 }
 
-public class graph {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n,e;
-        n=sc.nextInt();
-        e=sc.nextInt();
-        unweighted_undirected_graph gp = new unweighted_undirected_graph(n, e);
-
-        for(int i=0;i<e;i++){
-            int a,b;
-            a=sc.nextInt();
-            b=sc.nextInt();
-            gp.addEdge(a, b);
-        }
-
-        
-
-        List<Integer> bfs = gp.BFS_map(0);
-        System.out.println();
-        for(int i = 0; i < bfs.size();i++){
-            System.out.print(bfs.get(i) +"\t");
-            // System.out.println();
-        }
-    }
-}

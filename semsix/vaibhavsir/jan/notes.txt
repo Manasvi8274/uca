@@ -1,0 +1,5 @@
+event not for a specific but event handler for a specific event 
+npm- node package manager
+npx - node package executor
+npx:-
+to create - npx create-next-app@latest

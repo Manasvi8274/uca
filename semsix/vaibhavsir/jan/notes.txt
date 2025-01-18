@@ -3,3 +3,6 @@ npm- node package manager
 npx - node package executor
 npx:-
 to create - npx create-next-app@latest
+
+(Angular is framework) - we cannot make directly a fetch but to make services etc to make api call;
+(Nextjs is framework) - we have react and reactdom liberary

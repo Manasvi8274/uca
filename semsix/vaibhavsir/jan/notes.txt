@@ -6,3 +6,15 @@ to create - npx create-next-app@latest
 
 (Angular is framework) - we cannot make directly a fetch but to make services etc to make api call;
 (Nextjs is framework) - we have react and reactdom liberary
+(@/*) - @-to create shortcuts
+
+app in src is app router tells us - when we create a page it creates a route for it So we do not have to do routing it is inbuilt routing
+
+difference between client and server side rendering
+
+client - multiple request like socket,etc;browser not able to render
+
+server - browser render itself
+
+js is much faster on server side rendering
+on server no need for re rendering for different users like in client side

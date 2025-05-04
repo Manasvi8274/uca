@@ -38,12 +38,12 @@ for _ in range(int(input())):
         l.append(l1)
         
     if(start == end):
-        l1=[i for i in range(1,n+1) if i!=end]
+        l1=[i for i in range(n,0,-1) if i!=end]
         l1.append(end)
         print(*l1)
     else:
         l1=[start]
-        for i in range(1,n+1):
+        for i in range(n,0,-1):
             if(i!=start and i!=end):
                 l1.append(i)
         l1.append(end)
